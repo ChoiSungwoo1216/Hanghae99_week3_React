@@ -18,11 +18,19 @@
 
 
 ![WeekList](https://user-images.githubusercontent.com/97146749/170031130-95f0414b-ac67-4de4-85e3-bc5202b56b45.PNG)
+
+
 새로고침을 할 때마다 새로운 랜덤한 개수의 노란 원이 나오고, 보라색화살표를 누르면 Review페이지로 넘어간다.
 위의 노란 원 갯수의 평균치르 아래에 보여준다.
 
 ![Reset](https://user-images.githubusercontent.com/97146749/170031134-4e9d1168-f0f2-43a5-9158-6058287476fd.PNG)
+
+
 Reset버튼을 눌러스 평균을 0.0으로 나오게 만들었습니다.
 
+
 ![Review](https://user-images.githubusercontent.com/97146749/170031136-6ee6d447-7d8e-4481-9001-853635be92f8.PNG)
+
+
+
 보라 화살표를 눌러서 넘어온 Review페이지에서 원을 클릭하면 갯수에 맞게 색깔이 바뀌고 평점남기기를 누르면 WeekList페이지로 돌아갑니다.
