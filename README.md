@@ -1,18 +1,28 @@
 # React_입문 과제
 
-index.js
-APP.js
-WeekList.js
-Review.js
 
 요구되는 기능
-
-![image](https://user-images.githubusercontent.com/97146749/170029851-f2ff87ce-f79f-47a6-9239-12401696da74.png)
-
-![image](https://user-images.githubusercontent.com/97146749/170029901-77bf97b7-4b4b-40c2-8b7a-be1aed5f4224.png)
-
-![image](https://user-images.githubusercontent.com/97146749/170029930-6525a155-d0bd-4773-b91f-7079de1a900e.png)
-
-
+- 1) 메인 페이지
+    - [ ]  일주일 평점 보여주기
+        - 평점은 1~5까지 숫자 중 랜덤한 정수로 만들어주세요.
+        - 각 요일 옆 삼각형 버튼을 누르면 요일 평점 남기기 페이지로 이동하기
+- 2) 평점 남기기 페이지
+    - [ ]  선택한 요일 보여주기
+    - [ ]  동그라미를 눌러서 평점 입력하기 (1번째 동그라미 누르면 1점, 3번째 동그라미 누르면 3점)
+    - [ ]  남기기 버튼을 누르면 이전 페이지로 이동하기
+- 3) 평균 평점 보여주기 (메인 페이지 컴포넌트에 구성 or 하위 컴포넌트인 평균 평점 컴포넌트에 구성)
+    - [ ]  각 요일별 랜덤 정수로 구성된 점수의 평균을 구하기
+    - [ ]  Reset 버튼을 누르면 평점 평균을 0으로 상태변화 시키기
 
 추가 기능 : 현재 요일이 제일 위에 오게 만들었습니다.
+
+
+![WeekList](https://user-images.githubusercontent.com/97146749/170031130-95f0414b-ac67-4de4-85e3-bc5202b56b45.PNG)
+새로고침을 할 때마다 새로운 랜덤한 개수의 노란 원이 나오고, 보라색화살표를 누르면 Review페이지로 넘어간다.
+위의 노란 원 갯수의 평균치르 아래에 보여준다.
+
+![Reset](https://user-images.githubusercontent.com/97146749/170031134-4e9d1168-f0f2-43a5-9158-6058287476fd.PNG)
+Reset버튼을 눌러스 평균을 0.0으로 나오게 만들었습니다.
+
+![Review](https://user-images.githubusercontent.com/97146749/170031136-6ee6d447-7d8e-4481-9001-853635be92f8.PNG)
+보라 화살표를 눌러서 넘어온 Review페이지에서 원을 클릭하면 갯수에 맞게 색깔이 바뀌고 평점남기기를 누르면 WeekList페이지로 돌아갑니다.
