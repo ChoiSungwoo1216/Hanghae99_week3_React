@@ -21,12 +21,12 @@
 
 
 새로고침을 할 때마다 새로운 랜덤한 개수의 노란 원이 나오고, 보라색화살표를 누르면 Review페이지로 넘어간다.
-위의 노란 원 갯수의 평균치르 아래에 보여준다.
+위의 노란 원 갯수의 평균치를 아래에 보여준다.
 
 ![Reset](https://user-images.githubusercontent.com/97146749/170031134-4e9d1168-f0f2-43a5-9158-6058287476fd.PNG)
 
 
-Reset버튼을 눌러스 평균을 0.0으로 나오게 만들었습니다.
+Reset버튼을 눌르면 평균을 0.0으로 나오게 만들었습니다.
 
 
 ![Review](https://user-images.githubusercontent.com/97146749/170031136-6ee6d447-7d8e-4481-9001-853635be92f8.PNG)
