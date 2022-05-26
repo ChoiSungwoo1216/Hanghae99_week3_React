@@ -39,14 +39,6 @@ padding: 5vh 0px;
 border: 1px solid rgb(221, 221, 221);
 box-sizing: border-box;
 border-radius: 5px;
-
-// max-width: 360px;
-// min-height: 70vh;
-// background-color: #fff;
-// padding: 16px;
-// margin: 40px auto;
-// border-radius: 5px;
-// border: 1px solid #ddd;
 `;
 
 export default App;
