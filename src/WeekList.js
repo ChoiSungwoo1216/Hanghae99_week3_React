@@ -7,32 +7,35 @@ const WeekList = (props) => {
     let history = useHistory();
     const my_lists = props.list;
     const [circle] = React.useState([0, 1, 2, 3, 4]);
+
     const getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
-    let [number, setNumber] = React.useState(0);
-
-
-        const onDecrease = () => {
-            if (number < -70) {
-                setNumber(number = -35);
-            } else {
-                setNumber(number - 70);
-            }
+    function RandomNum() {
+        let arr = [];
+        for (let i = 0; i < 7; i++) {
+            arr.push(getRandom(0, 5));
         }
-
-
-
-    function posNum(number) {
-        return number < 0 ? (0).toFixed(1) : (number / 7).toFixed(1);
+        return (arr);
     }
+
+    let RanArr = RandomNum();
+
+    function sum(RanArr) {
+        let sumR = 0;
+        for (let i = 0; i < 7; i++) {
+            sumR += RanArr[i];
+        }
+        return (sumR);
+    }
+
+    let RanAvg = (sum(RanArr) / 7).toFixed(1);
+    let [avg, setAvg] = React.useState(RanAvg);
+
 
     return (
         <ListStyle>
             <Title>내 일주일은?</Title>
             {my_lists.map((list, index) => {
-                const num = getRandom(0, 5);
-                number += (num + 1);
-                console.log(`${index} : ${num} : ${number}`);
                 return (
                     <LineStyle>
                         <ItemStyle key={index}>
@@ -42,7 +45,7 @@ const WeekList = (props) => {
                             {circle.map((e, i) => {
 
                                 return <Circle
-                                    style={{ backgroundColor: i <= num ? ("rgb(255, 235, 59)") : ("rgb(221, 221, 221)") }} />;
+                                    style={{ backgroundColor: i <= RanArr[index] ? ("rgb(255, 235, 59)") : ("rgb(221, 221, 221)") }} />;
                             })}
                         </div>
                         <Arrow
@@ -55,11 +58,14 @@ const WeekList = (props) => {
             })}
             <AverageReset>
                 <p>평균 평점
-                    {posNum(number)}</p>
-                <ReBtnSty onClick={onDecrease}>
+                    {avg}</p>
+                <ReBtnSty onClick={() => {
+                    setAvg(parseInt(0).toFixed(1));
+                }}>
                     <Reset>Reset</Reset>
                 </ReBtnSty>
             </AverageReset>
+
         </ListStyle>
     );
 };
